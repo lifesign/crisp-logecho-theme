@@ -1,0 +1,10 @@
+{% for post in index.post %}
+<section>
+    <h3 class="post-title">
+        <a href="{{post.url}}">{{post.title}}</a>
+        <span class="separator"> &middot; </span>
+        {{post.date | date("F j, Y") }}
+        {% include "partials/taglist.twig" %}
+    </h3>
+</section>
+{% endfor %}

@@ -1,0 +1,8 @@
+<span class="taglist">
+    {% if post.tag is not empty %}
+     &middot; 
+        {% for tag in post.tag %}
+            <a href="{{tag.url}}">{{tag.name}}</a>
+        {% endfor %}
+    {% endif %}
+</span>

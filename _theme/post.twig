@@ -1,4 +1,4 @@
-{% extends "default.twig" %} 
+{% extends "default.twig" %}
 {% block body %}
 
 <article>
@@ -16,28 +16,16 @@
     <h1 class="post-title">{{post.title}}</h1>
     {{post.content}}
 
-    标签:
+    Tags:
     {% include "partials/taglist.twig" %}
 
     <!-- include share -->
 </article>
 
 <!-- Begin Comments Code -->
-<div id="comments">
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        var disqus_shortname = 'yunseame'; // required: replace example with your shortname
-        var disqus_identifier = '{{id}}';
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    <a href="http://disqus.com" class="dsq-brlink">Comments powered by <span class="logo-disqus">Disqus</span></a>
+<div id="disqus_thread">
+    <button type="button" name="yunseame" class="show-commend">显示评论</button>
 </div>
 <!-- End Comments Code -->
-
 
 {% endblock %}

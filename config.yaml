@@ -4,6 +4,7 @@ globals:
     title : Site Title
     description : Site Description
     url : Site Url
+    logo : /content/images/logo.jpg
 blocks:
     # All blocks to compile
     post:
@@ -33,5 +34,7 @@ feeds:
 build:
     # The commands running after compile
     - cp -f @THEME/crisp.css @TARGET/crisp.css
+    - cp -f @THEME/base.js @TARGET/base.js
+    - cp -rf @THEME/../content/* @TARGET/content
 sync:
     # The commands running with sync operation

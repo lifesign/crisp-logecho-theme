@@ -1,0 +1,37 @@
+# You can configure this file to customize your site
+globals:
+    # Definition of global variable
+    title : Site Title
+    description : Site Description
+    url : Site Url
+blocks:
+    # All blocks to compile
+    post:
+        source  : /posts/
+        target  : /posts/
+    category:
+        source  :
+            default : Default
+        template  : archives.twig
+        target    : archives.html
+    tag:
+        template  : archives.twig
+        target    : archives.html
+    archive:
+        template  : archives.twig
+        target    : archives.html
+    index:
+        template  : index.twig
+        target    : index.html
+        limit     : 10
+feeds:
+    # Definition of feeds gererating
+    source  : post
+    recent  : 20
+    target  : feeds.xml
+    author  : Logecho
+build:
+    # The commands running after compile
+    - cp -f @THEME/crisp.css @TARGET/crisp.css
+sync:
+    # The commands running with sync operation

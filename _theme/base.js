@@ -10,4 +10,8 @@ $(document).ready(function() {
             cache: true
         });
     });
+
+    //highlight
+    $('pre').addClass('language-php');
+    Prism.highlightAll();
 });

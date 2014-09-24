@@ -13,11 +13,11 @@ blocks:
     category:
         source  :
             default : Default
-        template  : archives.twig
-        target    : archives.html
+        template  : categories.twig
+        target    : categories.html
     tag:
-        template  : archives.twig
-        target    : archives.html
+        template  : tags.twig
+        target    : tags.html
     archive:
         template  : archives.twig
         target    : archives.html
@@ -25,6 +25,9 @@ blocks:
         template  : index.twig
         target    : index.html
         limit     : 10
+    about:
+        template  : about.twig
+        target    : about.html
 feeds:
     # Definition of feeds gererating
     source  : post
@@ -35,6 +38,7 @@ build:
     # The commands running after compile
     - cp -f @THEME/crisp.css @TARGET/crisp.css
     - cp -f @THEME/prism.css @TARGET/prism.css
+    - cp -f @THEME/typo.css @TARGET/typo.css
     - cp -f @THEME/base.js @TARGET/base.js
     - cp -f @THEME/prism.js @TARGET/prism.js
     - cp -rf @THEME/../content/* @TARGET/content

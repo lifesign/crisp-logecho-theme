@@ -41,6 +41,7 @@ build:
     - cp -f @THEME/typo.css @TARGET/typo.css
     - cp -f @THEME/base.js @TARGET/base.js
     - cp -f @THEME/prism.js @TARGET/prism.js
+    - cp -f @THEME/jquery.scrollUp.js @TARGET/jquery.scrollUp.js
     - cp -rf @THEME/../content/* @TARGET/content
 sync:
     # The commands running with sync operation

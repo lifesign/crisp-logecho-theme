@@ -294,3 +294,25 @@ footer a:hover {
 .show-commend:hover {
 	cursor:pointer;
 }
+
+/*backtotop*/
+
+#scrollUp {
+    display: none;
+    width: 68px;
+    height: 68px;
+    background-image: url('/content/images/backtotop.png');
+    background-repeat: no-repeat;
+    -webkit-background-size: 160px 68px;
+         -o-background-size: 160px 68px;
+            background-size: 160px 68px;
+    background-position: -89px 0;
+    position: fixed;
+    bottom: 180px;
+    right: 45px;
+    z-index:1;
+}
+
+#scrollUp:hover {
+    background-position: -3px 0;
+}

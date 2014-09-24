@@ -14,4 +14,9 @@ $(document).ready(function() {
     //highlight
     $('pre').addClass('language-php');
     Prism.highlightAll();
+
+    //back to top
+    $.scrollUp.init({
+        'scrollText' : ''
+    });
 });
